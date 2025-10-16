@@ -1,0 +1,138 @@
+:root {
+  --branding-color: #6c63ff;
+  --secondary-color: #f9f7fe;
+  --default-font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-family: var(--default-font-family);
+  background-color: black;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.navbar-brand {
+  margin-left: 100px !important;
+  margin-top: 25px !important;
+  color: white !important;
+  font-size: 18px;
+}
+
+.navbar-nav {
+  margin-left: 700px;
+  margin-top: 25px;
+  font-size: 18px;
+}
+
+.nav-link {
+  color: white;
+  margin: 15px;
+}
+
+.nav-link:hover {
+  color: #7962f1 !important;
+  transition: color 0.1s ease;
+}
+
+.nav-link.active {
+  color: #7962f1 !important;
+}
+
+.navbar-brand:hover {
+  color: #7962f1 !important;
+  transition: color 0.1s ease;
+}
+
+.hero {
+  text-align: left;
+  padding: 60px 20px;
+}
+
+h1 {
+  font-family: "Big Shoulders Inline", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 1.5;
+  margin-left: 17px;
+  text-align: left;
+  display: inline-block;
+
+  background: linear-gradient(90deg, #ff6ec4, #b384f5, #4b0082);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+
+  /* Make sure the gradient stretches over all words */
+  background-size: 100% 100%;
+}
+
+h2 {
+  font-family: "ancizar sans", "sans-serif";
+  font-weight: 300;
+  font-size: 45px;
+  color: white;
+  line-height: 1.5;
+  margin-left: 17px;
+  text-align: left;
+}
+
+.img-fluid {
+  max-width: 50%;
+  border: 5px solid #ce85ca;
+  margin-left: 230px;
+}
+
+footer a.email-link {
+  color: white !important;
+  text-decoration: none;
+  transition: color 0.1s ease;
+  padding: 5px 10px;
+  margin: 30px 10px;
+  border: 1px solid white;
+  border-radius: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+footer a.email-link:hover {
+  color: #4b0082 !important;
+  border: 1px solid #4b0082;
+}
+
+/* about me page */
+
+.marvel {
+  text-align: center !important;
+  margin-right: 110px;
+}
+
+.aboutmeh1 {
+  font-family: "Big Shoulders Inline", sans-serif !important;
+  font-size: 70px !important;
+  line-height: 1.5 !important;
+}
+
+.aboutmeh2 {
+  font-family: "ancizar sans", "sans-serif" !important;
+  font-size: 30px !important;
+  color: white !important;
+  text-align: center;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 80px;
+}
+
+.project-card-1 {
+  color: white;
+  border: 2px solid #7962f1;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  gap: 24px;
+  padding: 1px 33px 33px 33px;
+}
