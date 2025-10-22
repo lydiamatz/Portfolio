@@ -102,37 +102,38 @@ footer a.email-link:hover {
 
 /* about me page */
 
-.marvel {
-  text-align: center !important;
-  margin-right: 110px;
+h1.aboutme-h1.mb-4 {
+  font-size: 60px !important;
+  font-weight: 200 !important;
+  margin-left: 170px;
 }
 
-.aboutmeh1 {
-  font-family: "Big Shoulders Inline", sans-serif !important;
-  font-size: 70px !important;
-  line-height: 1.5 !important;
-}
-
-.aboutmeh2 {
-  font-family: "ancizar sans", "sans-serif" !important;
+h2.aboutme-h2.mb-5 {
   font-size: 30px !important;
-  color: white !important;
-  text-align: center;
 }
 
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columns */
-  gap: 80px;
+p.keen {
+  font-size: 20px !important;
+  line-height: 4;
 }
 
-.project-card-1 {
+p.proj,
+p.tools,
+p.learning {
+  font-size: 20px !important;
+  line-height: 1.5;
+  margin: auto;
   color: white;
-  border: 2px solid #7962f1;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s;
-  gap: 24px;
-  padding: 1px 33px 33px 33px;
+}
+
+.btn-secondary.back-btn {
+  color: white;
+  background-color: rgb(81, 78, 78);
+  font-family: var(--default-font-family);
+  font-weight: 600;
+  margin: 15px 10px;
+  padding: 12px 15px;
+  font-size: 12px;
+  border-radius: 30px;
+  border: none;
 }
