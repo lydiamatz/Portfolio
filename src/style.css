@@ -82,34 +82,17 @@ h2 {
   margin-left: 230px;
 }
 
-footer a.email-link {
-  color: white !important;
-  text-decoration: none;
-  transition: color 0.1s ease;
-  padding: 5px 10px;
-  margin: 30px 10px;
-  border: 1px solid white;
-  border-radius: 16px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-footer a.email-link:hover {
-  color: #4b0082 !important;
-  border: 1px solid #4b0082;
-}
-
 /* about me page */
 
 h1.aboutme-h1.mb-4 {
-  font-size: 60px !important;
+  font-size: 70px !important;
   font-weight: 200 !important;
   margin-left: 170px;
+  margin-top: 150px;
 }
 
 h2.aboutme-h2.mb-5 {
-  font-size: 30px !important;
+  font-size: 20px !important;
 }
 
 p.keen {
@@ -126,6 +109,54 @@ p.learning {
   color: white;
 }
 
+.aboutme-h3 {
+  text-align: center;
+  display: block;
+  font-family: "ancizar sans", "sans-serif";
+  color: #212529;
+  font-size: 37px;
+  font-weight: 300;
+  margin-bottom: -80px;
+}
+
+.footer-home {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  padding: 5px;
+  color: white;
+  text-decoration: none;
+  margin-top: 150px;
+}
+
+.footer-home a {
+  color: white;
+  text-decoration: none;
+  margin-right: 25px;
+}
+,
+.footer-lydia a {
+  color: white;
+  text-decoration: none;
+  margin-right: 25px;
+}
+
+.footer-home,
+.footer-lydia a:hover {
+  color: #7962f1 !important;
+  transition: color 0.1s ease;
+}
+
+.footer-lydia {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  padding-bottom: 50px;
+  color: white;
+  text-decoration: none;
+  margin-top: 190px;
+}
+
 .btn-secondary.back-btn {
   color: white;
   background-color: rgb(81, 78, 78);
@@ -136,4 +167,37 @@ p.learning {
   font-size: 12px;
   border-radius: 30px;
   border: none;
+}
+
+p.stack {
+  font-family: "Big Shoulders Inline", sans-serif;
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 1.5;
+  margin-left: 140px;
+  margin-top: 100px;
+  text-align: left;
+  display: inline-block;
+
+  background: linear-gradient(90deg, #ff6ec4, #b384f5, #4b0082);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+
+  /* Make sure the gradient stretches over all words */
+  background-size: 100% 100%;
+}
+
+.stack-icons {
+  display: flex;
+  gap: 30px; /* No gap between images */
+  margin-top: 30px;
+  margin-left: 100px;
+}
+
+.stack-img {
+  width: 60px; /* Adjust size */
+  height: 60px;
+  display: block;
+  border: none !important;
 }
