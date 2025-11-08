@@ -150,7 +150,7 @@ p.learning {
 .footer-lydia {
   display: flex;
   justify-content: center;
-  font-size: 18px;
+  font-size: 17px;
   padding-bottom: 50px;
   color: white;
   text-decoration: none;
@@ -200,4 +200,45 @@ p.stack {
   height: 60px;
   display: block;
   border: none !important;
+}
+
+/* work page */
+
+.hero-work {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+h1.takealook {
+  font-size: 60px !important;
+  margin-bottom: 150px;
+
+  background: linear-gradient(90deg, #ff6ec4, #b384f5, #4b0082);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.img-fluid-work {
+  max-width: 70%;
+  margin-left: 0px;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.hero-work .row {
+  display: flex;
+  align-items: flex-start;
+}
+
+.col-md-6 {
+  /* no display: block or flex needed here */
+  padding: 0 15px; /* optional for spacing */
+}
+
+.col-md-6 img {
+  display: block;
+  margin: 0 auto;
+  vertical-align: middle;
 }
