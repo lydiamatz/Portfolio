@@ -1,6 +1,8 @@
+body {
+  overflow-x: hidden;
+}
+
 :root {
-  --branding-color: #6c63ff;
-  --secondary-color: #f9f7fe;
   --default-font-family: "Poppins", sans-serif;
 }
 
@@ -123,12 +125,16 @@ p.learning {
   display: flex;
   justify-content: center;
   font-size: 18px;
-  padding: 5px;
+  padding-top: 5px;
+  padding-bottom: 0px;
   color: white;
   text-decoration: none;
   margin-top: 150px;
 }
 
+.custom-link {
+  color: #ce85ca;
+}
 .footer-home a {
   color: white;
   text-decoration: none;
@@ -174,7 +180,7 @@ p.stack {
   font-weight: 300;
   font-size: 60px;
   line-height: 1.5;
-  margin-left: 140px;
+  margin-left: 200px;
   margin-top: 100px;
   text-align: left;
   display: inline-block;
@@ -274,9 +280,16 @@ h2.clock-app {
 }
 
 .h1-contact {
-  font-size: 50px;
-  color: white;
+  font-size: 60px;
+  font-weight: 50;
   margin-bottom: 20px;
+}
+
+.h2-contact {
+  font-size: 25px;
+  font-weight: 200;
+  color: #7962f1;
+  text-decoration: underline;
 }
 
 .email-contact,
@@ -285,10 +298,111 @@ h2.clock-app {
   color: #ff6ec4;
   font-size: 24px;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 100;
+  text-decoration: underline;
 }
 
 .email-contact:hover,
 .linkedin-contact:hover {
-  color: #b384f5;
+  color: #7962f1;
+}
+
+/* ---------------- Mobile-only adjustments ---------------- */
+@media (max-width: 576px) {
+  /* Prevent horizontal scrolling */
+  body {
+    overflow-x: hidden;
+  }
+
+  /* HERO SECTION */
+  .hero {
+    padding: 30px 10px;
+    text-align: center;
+  }
+
+  /* Main title / stack text */
+
+  h1,
+  .h1-contact {
+    font-size: 37px !important;
+    margin-left: 0 !important;
+    text-align: center;
+  }
+  h2 {
+    font-size: 25px !important;
+    margin-left: 0 !important;
+    text-align: center;
+  }
+
+  /* HERO IMAGE */
+  .img-fluid {
+    max-width: 80% !important; /* fill available space */
+    margin: 0 auto 15px auto;
+    display: block;
+  }
+
+  p.stack {
+    display: block !important; /* override inline-block */
+    margin: 20px auto 10px auto; /* center element */
+    text-align: center;
+    font-size: 32px;
+    padding: 10px 0;
+    line-height: 1.2;
+  }
+
+  .stack-icons {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px auto 0 auto;
+    gap: 12px;
+  }
+
+  .stack-img {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* NAVBAR */
+  .navbar-brand {
+    margin-left: 15px !important;
+    margin-top: 10px !important;
+    font-size: 16px;
+  }
+
+  .navbar-nav {
+    margin-left: 0 !important;
+    text-align: center;
+  }
+
+  .nav-link {
+    padding: 10px 0;
+  }
+
+  /* FOOTER */
+  .footer-home,
+  .footer-lydia {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px !important;
+  }
+
+  .footer-home a,
+  .footer-lydia a {
+    margin: 0 0 10px 0;
+  }
+
+  /* COPYRIGHT / OPEN-SOURCE TEXT */
+  p.text-center {
+    font-size: 0.85rem;
+    margin: 10px 15px;
+    text-align: center;
+  }
+
+  .h1-contact {
+    font-size: 45px;
+  }
+
+  .h2-contact {
+    font-size: 20px;
+  }
 }
