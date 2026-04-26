@@ -14,8 +14,8 @@ body {
 }
 
 .navbar-brand {
-  margin-left: 100px !important;
-  margin-top: 25px !important;
+  margin-left: 150px !important;
+  margin-top: 0px !important;
   color: white !important;
   font-size: 18px;
 }
@@ -81,9 +81,14 @@ h2 {
 .img-fluid {
   max-width: 50%;
   border: 5px solid #ce85ca;
-  margin-left: 230px;
+  float: right;
 }
 
+.col-md-6 img {
+  margin-left: auto;
+  display: block;
+  margin-right: 0;
+}
 /* about me page */
 
 h1.aboutme-h1.mb-4 {
@@ -227,7 +232,8 @@ h1.takealook {
 
 .img-fluid-work {
   max-width: 70%;
-  margin-left: 0px;
+  margin-left: 100px !important;
+  border-radius: 0 !important;
   border: none !important;
   outline: none !important;
   box-shadow: none !important;
@@ -239,14 +245,13 @@ h1.takealook {
 }
 
 .col-md-6 {
-  /* no display: block or flex needed here */
-  padding: 0 15px; /* optional for spacing */
+  overflow: visible;
 }
 
-.col-md-6 img {
-  display: block;
-  margin: 0 auto;
-  vertical-align: middle;
+.me-photo {
+  position: relative;
+  right: 50px;
+  border-radius: 50%;
 }
 
 .learn-more {
@@ -286,25 +291,29 @@ h2.clock-app {
 }
 
 .h2-contact {
-  font-size: 25px;
-  font-weight: 200;
-  color: #7962f1;
-  text-decoration: underline;
+  font-size: 25px !important;
+  font-weight: 200 !important;
+  color: #7962f1 !important;
+  text-decoration: underline !important;
+  margin: 0px;
+}
+
+.h2-contact:hover {
+  color: #ac84a8 !important;
+  transition: color 0.1s ease;
 }
 
 .email-contact,
 .linkedin-contact {
-  display: block;
-  color: #ff6ec4;
-  font-size: 24px;
-  text-decoration: none;
-  font-weight: 100;
-  text-decoration: underline;
+  color: white !important;
+  font-size: 18px !important;
+  font-weight: 100 !important;
+  text-decoration: none !important;
 }
 
 .email-contact:hover,
 .linkedin-contact:hover {
-  color: #7962f1;
+  color: #7962f1 !important;
 }
 
 /* ---------------- Mobile-only adjustments ---------------- */
@@ -399,10 +408,10 @@ h2.clock-app {
   }
 
   .h1-contact {
-    font-size: 45px;
+    font-size: 40px;
   }
 
   .h2-contact {
-    font-size: 20px;
+    font-size: 20 px !important;
   }
 }
