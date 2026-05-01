@@ -63,8 +63,6 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
-
-  /* Make sure the gradient stretches over all words */
   background-size: 100% 100%;
 }
 
@@ -79,16 +77,25 @@ h2 {
 }
 
 .img-fluid {
-  max-width: 50%;
+  max-width: 300px;
   border: 5px solid #ce85ca;
-  float: right;
+  border-radius: 50%;
+  display: block;
 }
 
-.col-md-6 img {
-  margin-left: auto;
-  display: block;
-  margin-right: 0;
+.image-col {
+  display: flex;
+  justify-content: flex-end; /* pushes image right */
+  padding-left: 200px;
 }
+
+.hero .col-md-6 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
 /* about me page */
 
 h1.aboutme-h1.mb-4 {
@@ -100,6 +107,7 @@ h1.aboutme-h1.mb-4 {
 
 h2.aboutme-h2.mb-5 {
   font-size: 20px !important;
+  text-align: justify;
 }
 
 p.keen {
@@ -232,7 +240,8 @@ h1.takealook {
 
 .img-fluid-work {
   max-width: 70%;
-  margin-left: 100px !important;
+  display: block;
+  margin: 0 auto; /* THIS centers the image */
   border-radius: 0 !important;
   border: none !important;
   outline: none !important;
@@ -246,6 +255,9 @@ h1.takealook {
 
 .col-md-6 {
   overflow: visible;
+  justify-content: center;
+  display: block;
+  margin: 100px;
 }
 
 .me-photo {
@@ -272,7 +284,7 @@ h2.clock-app {
   font-size: 20px !important;
   margin-top: 0px;
   margin-bottom: 20px;
-  padding: 20px 75px;
+  padding: 40px 75px;
 }
 
 .wrap-contact {
@@ -316,7 +328,6 @@ h2.clock-app {
   color: #7962f1 !important;
 }
 
-/* ---------------- Mobile-only adjustments ---------------- */
 @media (max-width: 576px) {
   /* Prevent horizontal scrolling */
   body {
