@@ -341,6 +341,30 @@ h2.clock-app {
 
   /* Main title / stack text */
 
+  /* Cursor and small UI polish — keep home image placement as-is */
+  a,
+  button,
+  .nav-link,
+  .learn-more {
+    cursor: pointer;
+  }
+
+  /* Subtle hover lift and color for interactive items */
+  a,
+  .nav-link,
+  .footer-home a {
+    transition:
+      color 0.15s ease,
+      transform 0.08s ease;
+  }
+
+  a:hover,
+  .nav-link:hover,
+  .footer-home a:hover,
+  .learn-more:hover {
+    transform: translateY(-2px);
+    color: #ac84a8 !important;
+  }
   h1,
   .h1-contact {
     font-size: 37px !important;
@@ -379,22 +403,6 @@ h2.clock-app {
   .stack-img {
     width: 40px;
     height: 40px;
-  }
-
-  /* NAVBAR */
-  .navbar-brand {
-    margin-left: 15px !important;
-    margin-top: 10px !important;
-    font-size: 16px;
-  }
-
-  .navbar-nav {
-    margin-left: 0 !important;
-    text-align: center;
-  }
-
-  .nav-link {
-    padding: 10px 0;
   }
 
   /* FOOTER */
